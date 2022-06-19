@@ -1,0 +1,134 @@
+<!-- 레이아웃 와이어프레임으로 그려보기 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d4d564086a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>YouTube-Clone</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="logo">
+      <i class="fa-brands fa-youtube"></i>
+      <span class="siteName">YouTube</span>
+    </div>
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+  </header>
+
+  <!-- video player -->
+  <section class="player">
+    <video controls src="img/file_example_MP4_480_1_5MG.mp4"></video>
+  </section>
+
+  <div class="infoAndupNext">
+    <!-- video info -->
+    <section class="info">
+      <!-- metadata -->
+      <div class="metadata">
+        <ul class="tags">
+          <li>#CloneCoding</li>
+          <li>#YouTube</li>
+          <li>#UI</li>
+        </ul>
+        <div class="titleAndBtn">
+          <span class="video_title">
+            Clone Coding YouTube Mobile Website | HTML, CSS, Javascript |
+            유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편 | 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, blanditiis!
+          </span>
+          <button class="moreBtn">
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </div>
+        <span class="views">1M views 1 month ago</span>
+      </div>
+      <!-- actions -->
+      <ul class="actions">
+        <li>
+          <button>
+            <i class="active fa-solid fa-thumbs-up"></i>
+            <span>1K</span>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fa-solid fa-thumbs-down"></i>
+            <span>0</span>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fa-solid fa-share"></i>
+            <span>Share</span>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fa-solid fa-plus"></i>
+            <span>Save</span>
+          </button>
+        </li>
+        <li>
+          <button>
+            <i class="fa-solid fa-flag"></i>
+            <span>Report</span>
+          </button>
+        </li>
+      </ul>
+      <!-- channel -->
+      <div class="channel">
+        <div class="ch_metadata">
+          <img src="img/user.jpg" alt="user">
+          <div class="info">
+            <span class="ch_name">Channel Name</span>
+            <span class="subscribers">1M subscribers</span>
+          </div>
+        </div>
+        <button class="subscribe">subscribe</button>
+      </div>
+    </section>
+
+    <!-- next video list -->
+    <section class="upNext">
+      <span class="title">Up Next</span>
+      <ul>
+        <li class="items">
+          <div class="img"><img src="img/unsplash1.jpg" alt="video1"></div>
+          <div class="item_info">
+            <span class="item_title">next video title</span>
+            <span class="item_ch">channel name</span>
+            <span class="item_views">1M views</span>
+          </div>
+          <button class="moreBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </li>
+        <li class="items">
+          <div class="img"><img src="img/unsplash1.jpg" alt="video2"></div>
+          <div class="item_info">
+            <span class="item_title">next video title</span>
+            <span class="item_ch">channel name</span>
+            <span class="item_views">1M views</span>
+          </div>
+          <button class="moreBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </li>
+        <li class="items">
+          <div class="img"><img src="img/unsplash1.jpg" alt="video3"></div>
+          <div class="item_info">
+            <span class="item_title">next video title</span>
+            <span class="item_ch">channel name</span>
+            <span class="item_views">1M views</span>
+          </div>
+          <button class="moreBtn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
