@@ -99,15 +99,23 @@ header .icons i {
 
 .info .metadata .titleAndBtn .video_title {
   font-size: var(--font-medium);
+  margin-right: var(--spacing-small);
+}
+
+.info .metadata .titleAndBtn .video_title.clamp {  /*버튼 클릭 여부에 따른 title표시*/
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  margin-right: var(--spacing-small);
 }
 
 .info .metadata .titleAndBtn .moreBtn {
   height: 100%;
+  transition: transform 300ms ease-in-out;  /*버튼에 animation 적용*/
+}
+
+.info .metadata .titleAndBtn .moreBtn.clicked { /*버튼 회전*/
+  transform: rotate(180deg);
 }
 
 .info .metadata .views {
